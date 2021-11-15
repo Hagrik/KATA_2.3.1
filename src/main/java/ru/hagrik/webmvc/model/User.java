@@ -1,13 +1,22 @@
 package ru.hagrik.webmvc.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "users")
 public class User {
 
-    private int Id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "lastname")
     private String lastname;
 
+    @Column(name = "age")
     private int age;
 
     public User() {
@@ -19,12 +28,12 @@ public class User {
         this.age = age;
     }
 
-    public int getId() {
-        return Id;
+    public Long getId() {
+        return id;
     }
 
-    public void setId(int id) {
-        Id = id;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -54,10 +63,11 @@ public class User {
     @Override
     public String toString() {
         return "\nUser{" +
-                "Id=" + Id +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", age=" + age +
                 '}';
     }
+
 }

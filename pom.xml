@@ -26,6 +26,7 @@
     <postgresql.version>42.2.23</postgresql.version>
     <hibernate-core.version>5.4.10.Final</hibernate-core.version>
     <hibernate-entitymanager.version>5.4.10.Final</hibernate-entitymanager.version>
+    <spring-data-jpa.version>2.3.9.RELEASE</spring-data-jpa.version>
   </properties>
 
   <dependencies>
@@ -90,6 +91,18 @@
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
       <version>${hibernate-entitymanager.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${spring-data-jpa.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.3.2</version>
     </dependency>
 
   </dependencies>
