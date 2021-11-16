@@ -19,7 +19,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public void createUser(User user) {
-        entityManager.merge(user);
+        entityManager.persist(user);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public void updateUser(User user) {
-        entityManager.persist(user);
+        entityManager.merge(user);
     }
 
     @Override

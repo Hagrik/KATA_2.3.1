@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>AddUser</title>
+    <title>User Management System</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
 </head>
 <body>
-<form method="POST" th:action="@{/}" th:object="${user}">
-    <label for="name">Enter name</label>
-    <input type="text" th:field="*{name}" id="name">
-    <br/>
-    <label for="lastname">Enter lastname</label>
-    <input type="text" th:field="*{lastname}" id="lastname">
-    <br/>
-    <label for="age">Enter name</label>
-    <input type="text" th:field="*{age}" id="age">
-    <br/>
-    <input type="submit" value="Submit">
-</form>
+<div class="container">
+    <h1>User Management System</h1>
+    <hr>
+    <h2>Save User</h2>
+
+    <form action="#" th:action="@{/saveUser}" th:object="${user}"
+          method="POST">
+        <input type="text" th:field="*{name}"
+               placeholder="User FirstName" class="form-control mb-4 col-4">
+
+        <input type="text" th:field="*{lastname}"
+               placeholder="User LastName" class="form-control mb-4 col-4">
+
+        <input type="text" th:field="*{age}"
+               placeholder="User age" class="form-control mb-4 col-4">
+
+        <button type="submit" class="btn btn-info col-2"> Save User</button>
+    </form>
+
+    <hr>
+
+    <a th:href = "@{/}"> Back to UserList</a>
+</div>
 </body>
 </html>

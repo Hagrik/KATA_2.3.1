@@ -26,11 +26,12 @@ public class UserController {
 
     @GetMapping("/addUser")
     public String addUserForm(Model model) {
-        model.addAttribute("user", new User());
+        User user = new User();
+        model.addAttribute("user", user);
         return "/addUser";
     }
 
-    @PostMapping()
+    @PostMapping("/saveUser")
     public String addUser(@ModelAttribute("user") User user) {
         userService.createUser(user);
         return "redirect:/";
@@ -42,11 +43,17 @@ public class UserController {
         return "redirect:/";
     }
 
-    @PatchMapping("/updateUser/{id}")
-    public String updateUser(@PathVariable("id") Long id, Model model) {
+    @GetMapping("/updateUser/{id}")
+    public String updateUserForm(@PathVariable("id") Long id, Model model) {
         User user = userService.getUser(id);
-        user.setName(User.class.getName());
-        return "user";
+        model.addAttribute("user", user);
+        return "updateUser";
+    }
+
+    @PatchMapping ("/updateUser/{id}")
+    public String updateUser(@ModelAttribute User user) {
+        userService.updateUser(user);
+        return "redirect:/";
     }
 
 }
