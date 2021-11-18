@@ -56,4 +56,11 @@ public class UserController {
         return "redirect:/";
     }
 
+    @GetMapping ("/userInfo/{id}")
+    public String userInfoForm(@PathVariable("id") Long id, Model model) {
+        User user = userService.getUser(id);
+        model.addAttribute("user", user);
+        return "userInfo";
+    }
+
 }
