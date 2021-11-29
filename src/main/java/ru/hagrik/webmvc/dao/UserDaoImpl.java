@@ -2,19 +2,23 @@ package ru.hagrik.webmvc.dao;
 
 import org.springframework.stereotype.Repository;
 import ru.hagrik.webmvc.model.User;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+
 @Repository
-public class UserDaoImpl implements UserDao{
+public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public List<User> userList() {
-        return entityManager.createQuery("from User ").getResultList();
+    public List<User> getUserList() {
+        return entityManager.createQuery(
+                "from User u left join fetch u.roles")
+                .getResultList().stream().distinct().toList();
     }
 
     @Override
@@ -23,8 +27,11 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public User getUser(Long id) {
-        return entityManager.find(User.class, id);
+    public User getUserById(Long id) {
+        return entityManager.createQuery(
+                "SELECT u FROM User u JOIN FETCH u.roles r WHERE u.id =:id", User.class)
+                .setParameter("id", id)
+                .getSingleResult();
     }
 
     @Override
@@ -33,7 +40,15 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public void removeUser(Long id) {
-        entityManager.remove(getUser(id));
+    public void removeUserById(Long id) {
+        entityManager.remove(getUserById(id));
+    }
+
+    @Override
+    public User getUserByName(String name) {
+        return entityManager.createQuery(
+                "SELECT u FROM User u JOIN FETCH u.roles r WHERE u.name =:name", User.class)
+                .setParameter("name", name)
+                .getSingleResult();
     }
 }

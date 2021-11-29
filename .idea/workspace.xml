@@ -10,12 +10,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebd33b4-b59c-4f27-aa0b-a6eff50fe6fe" name="Changes" comment="Trying">
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/dataSources/5f5fa74f-3625-4f0a-8c13-c92552fa444a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata2.3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/UserGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/UserGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/java/ru/hagrik/webmvc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/addUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/updateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/updateUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/userInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/src/main/webapp/WEB-INF/views/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/UserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/UserGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/config/SpringConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/classes/ru/hagrik/webmvc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1..war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/UserGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/UserGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/config/SpringConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/classes/ru/hagrik/webmvc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/lib/thymeleaf-3.0.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/lib/thymeleaf-spring5-3.0.12.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/addUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/updateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/updateUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/userInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/userInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/views/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kata2.3.1/target/kata2.3.1/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +63,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,12 +105,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../kata2.3.1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.234375" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -86,7 +125,7 @@
       <deployment>
         <artifact name="kata2.3.1.:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -185,7 +224,17 @@
       <workItem from="1637037267481" duration="8834000" />
       <workItem from="1637068268094" duration="13901000" />
       <workItem from="1637083410906" duration="4546000" />
-      <workItem from="1637246653766" duration="9860000" />
+      <workItem from="1637246653766" duration="10544000" />
+      <workItem from="1637300580851" duration="32665000" />
+      <workItem from="1637413693450" duration="5411000" />
+      <workItem from="1637651825538" duration="15522000" />
+      <workItem from="1637728871166" duration="8305000" />
+      <workItem from="1637738813427" duration="27928000" />
+      <workItem from="1637821557377" duration="26327000" />
+      <workItem from="1637905631557" duration="19485000" />
+      <workItem from="1637949643579" duration="8227000" />
+      <workItem from="1637989613649" duration="11566000" />
+      <workItem from="1638089940436" duration="25290000" />
     </task>
     <task id="LOCAL-00001" summary="Trying">
       <created>1636964040024</created>
@@ -208,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637003686910</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Trying">
+      <created>1637263785173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637263785173</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Trying">
+      <created>1637263826640</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637263826640</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,11 +339,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Trying" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception" />
-      </default-breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ru.hagrik.webmvc.model.User" memberName="roles" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="((AdminController)this).roleService" language="JAVA" custom="ru.hagrik.webmvc.controller.AdminController" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

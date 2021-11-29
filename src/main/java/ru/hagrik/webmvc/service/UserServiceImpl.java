@@ -1,5 +1,7 @@
 package ru.hagrik.webmvc.service;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.hagrik.webmvc.dao.UserDao;
@@ -8,6 +10,7 @@ import ru.hagrik.webmvc.model.User;
 import java.util.List;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     final UserDao userDao;
@@ -17,33 +20,32 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
-    public List<User> userList() {
-        return userDao.userList();
+    public List<User> getUserList() {
+        return userDao.getUserList();
     }
 
-    @Transactional
     @Override
     public void createUser(User user) {
         userDao.createUser(user);
     }
 
-    @Transactional
     @Override
-    public User getUser(Long id) {
-        return userDao.getUser(id);
+    public User getUserById(Long id) {
+        return userDao.getUserById(id);
     }
 
-    @Transactional
+    @Override
+    public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
+        return userDao.getUserByName(name);
+    }
+
     @Override
     public void updateUser(User user) {
         userDao.updateUser(user);
     }
 
-    @Transactional
     @Override
-    public void removeUser(Long id) {
-        userDao.removeUser(id);
+    public void removeUserById(Long id) {
+        userDao.removeUserById(id);
     }
-
 }

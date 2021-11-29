@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +21,7 @@
             <th>User First Name</th>
             <th>User Last Name</th>
             <th>User Age</th>
+            <th>Role</th>
         </tr>
         </thead>
         <tbody>
@@ -26,12 +29,16 @@
             <td th:text="${user.getName()}"></td>
             <td th:text="${user.getLastname()}"></td>
             <td th:text="${user.getAge()}"></td>
+            <td th:text="${user.getRoles()}"></td>
         </tr>
-
         </tbody>
     </table>
     <hr>
-    <a th:href="@{/}"> Back to UserList</a>
+    <div sec:authorize="hasAuthority('ROLE_ADMIN')">
+    <a th:href="@{/admin}" > Back to UserList</a>
+    </div>
+    <br>
+    <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
 </div>
 </body>
 </html>

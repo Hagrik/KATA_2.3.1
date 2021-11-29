@@ -1,19 +1,24 @@
 package ru.hagrik.webmvc.service;
 
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import ru.hagrik.webmvc.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserService extends UserDetailsService {
 
-    List<User> userList();
+    List<User> getUserList();
 
     void createUser(User user);
 
-    User getUser(Long id);
+    User getUserById(Long id);
 
     void updateUser(User user);
 
-    void removeUser(Long id);
+    void removeUserById(Long id);
 
+    @Override
+    UserDetails loadUserByUsername(String name) throws UsernameNotFoundException;
 }

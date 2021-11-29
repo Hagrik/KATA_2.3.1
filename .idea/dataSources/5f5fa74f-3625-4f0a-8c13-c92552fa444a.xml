@@ -785,7 +785,7 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <IntrospectionStateNumber>939</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1769</IntrospectionStateNumber>
       <StartupTime>1636916344</StartupTime>
     </root>
     <database id="2" parent="1" name="postgres">
@@ -802,9 +802,10 @@ false Zulu
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>940</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1770</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|32850|32851|1
+      <Relations>sequence|table|34199|34200|1
+sequence|table|34193|34194|1
 </Relations>
     </database>
     <role id="3" parent="1" name="pg_database_owner">
@@ -2498,7 +2499,7 @@ false Zulu
       <Comment>standard public schema</Comment>
       <StateNumber>527</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>940</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1770</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="20" parent="2" name="adminpack">
@@ -2607,60 +2608,168 @@ false Zulu
       <Handler>pg_catalog.spghandler</Handler>
       <HandlerId>334</HandlerId>
     </access-method>
-    <sequence id="33" parent="19" name="users_id_seq">
-      <ObjectId>32850</ObjectId>
+    <sequence id="33" parent="19" name="roles_role_id_seq">
+      <ObjectId>34193</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>934</StateNumber>
+      <StateNumber>1758</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="34" parent="19" name="users">
-      <ObjectId>32851</ObjectId>
+    <sequence id="34" parent="19" name="users_user_id_seq">
+      <ObjectId>34199</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>934</StateNumber>
+      <StateNumber>1759</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="35" parent="19" name="roles">
+      <ObjectId>34194</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1761</StateNumber>
       <AccessMethodId>2</AccessMethodId>
     </table>
-    <column id="35" parent="34" name="id">
+    <table id="36" parent="19" name="users">
+      <ObjectId>34200</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1762</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+    </table>
+    <table id="37" parent="19" name="users_roles">
+      <ObjectId>34207</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1761</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+    </table>
+    <column id="38" parent="35" name="role_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>934</StateNumber>
+      <StateNumber>1758</StateNumber>
       <TypeId>20</TypeId>
       <IdentityKind>by-default</IdentityKind>
     </column>
-    <column id="36" parent="34" name="age">
+    <column id="39" parent="35" name="role">
       <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>934</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="37" parent="34" name="lastname">
-      <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>934</StateNumber>
+      <StateNumber>1758</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="34" name="name">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>934</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="39" parent="34" name="users_pkey">
-      <ObjectId>32856</ObjectId>
-      <StateNumber>934</StateNumber>
-      <ColNames>id</ColNames>
+    <index id="40" parent="35" name="roles_pkey">
+      <ObjectId>34197</ObjectId>
+      <StateNumber>1758</StateNumber>
+      <ColNames>role_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
       <CollationIds>0</CollationIds>
       <ClassIds>3124</ClassIds>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="40" parent="34" name="users_pkey">
-      <ObjectId>32857</ObjectId>
-      <StateNumber>934</StateNumber>
-      <ColNames>id</ColNames>
+    <key id="41" parent="35" name="roles_pkey">
+      <ObjectId>34198</ObjectId>
+      <StateNumber>1758</StateNumber>
+      <ColNames>role_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>roles_pkey</UnderlyingIndexName>
+    </key>
+    <column id="42" parent="36" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1759</StateNumber>
+      <TypeId>20</TypeId>
+      <IdentityKind>by-default</IdentityKind>
+    </column>
+    <column id="43" parent="36" name="age">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1759</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="44" parent="36" name="lastname">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1759</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="36" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1759</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="46" parent="36" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1759</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="47" parent="36" name="users_pkey">
+      <ObjectId>34205</ObjectId>
+      <StateNumber>1759</StateNumber>
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <CollationIds>0</CollationIds>
+      <ClassIds>3124</ClassIds>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="48" parent="36" name="users_pkey">
+      <ObjectId>34206</ObjectId>
+      <StateNumber>1759</StateNumber>
+      <ColNames>user_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
+    <column id="49" parent="37" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1760</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="50" parent="37" name="role_id">
+      <Position>2</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1760</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="51" parent="37" name="users_roles_pkey">
+      <ObjectId>34210</ObjectId>
+      <StateNumber>1760</StateNumber>
+      <ColNames>user_id
+role_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <CollationIds>0,0</CollationIds>
+      <ClassIds>3124,3124</ClassIds>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="52" parent="37" name="users_roles_pkey">
+      <ObjectId>34211</ObjectId>
+      <StateNumber>1760</StateNumber>
+      <ColNames>user_id
+role_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_roles_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="53" parent="37" name="fk2o0jvgh89lemvvo17cbqvdxaa">
+      <ObjectId>34217</ObjectId>
+      <StateNumber>1762</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>34200</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>user_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="54" parent="37" name="fkj6m8fwv7oqv74fcehir1a9ffy">
+      <ObjectId>34212</ObjectId>
+      <StateNumber>1761</StateNumber>
+      <ColNames>role_id</ColNames>
+      <RefTableId>34194</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>roles</RefTableName>
+      <RefKeyName>roles_pkey</RefKeyName>
+      <RefColNames>role_id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

@@ -14,7 +14,7 @@
     <hr>
     <h2>Save User</h2>
 
-    <form action="#" th:action="@{/saveUser}" th:object="${user}"
+    <form action="#" th:action="@{/admin/saveUser}" th:object="${user}"
           method="POST">
         <input type="text" th:field="*{name}"
                placeholder="User FirstName" class="form-control mb-4 col-4">
@@ -24,13 +24,22 @@
 
         <input type="text" th:field="*{age}"
                placeholder="User age" class="form-control mb-4 col-4">
-
+        <p>
+            <label>Roles:
+                <input type="checkbox" name="roles"
+                       th:each="role : ${roleSet}"
+                       th:text="${role.role}"
+                       th:value="${role.role}"
+                       th:field="*{roles}"
+                />
+            </label>
+        </p>
         <button type="submit" class="btn btn-info col-2"> Save User</button>
     </form>
-
     <hr>
-
-    <a th:href = "@{/}"> Back to UserList</a>
+    <a th:href="@{/admin}" > Back to UserList</a>
+    <br>
+    <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
 </div>
 </body>
 </html>

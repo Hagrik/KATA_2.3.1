@@ -13,11 +13,14 @@
     <hr>
     <h2>Update User</h2>
 
-    <form action="#" th:action="@{/updateUser/{id}}" th:object="${user}"
+    <form action="#" th:action="@{/admin/updateUser/{id}}" th:object="${user}"
           th:method="PATCH">
 
-        <!-- Add hidden form field to handle update -->
-        <input type="hidden" th:field="*{id}" />
+        <input type="hidden" th:field="*{id}"/>
+
+        <input type="hidden" th:field="*{password}"/>
+
+        <input type="hidden" th:field="*{active}"/>
 
         <input type="text" th:field="*{name}" class="form-control mb-4 col-4">
 
@@ -25,12 +28,22 @@
 
         <input type="text" th:field="*{age}" class="form-control mb-4 col-4">
 
-        <button type="submit" class="btn btn-info col-2"> Update User</button>
+        <p>
+            <label>Roles:
+                <input type="checkbox" name="roles"
+                       th:each="role : ${roleSet}"
+                       th:text="${role.role}"
+                       th:value="${role.role}"
+                       th:field="*{roles}"
+                />
+            </label>
+        </p>
+        <button type="submit" class="btn btn-info col-2"> Save User</button>
     </form>
-
     <hr>
-
-    <a th:href = "@{/}"> Back to UserList</a>
+    <a th:href="@{/admin}" > Back to UserList</a>
+    <br>
+    <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
 </div>
 </body>
 </html>
